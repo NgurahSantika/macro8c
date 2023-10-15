@@ -1,0 +1,501 @@
+@media screen and (min-width: 900px) {
+    body {
+      width: 100%;
+    }
+  }
+  
+  body {
+    font-family: poppins;
+  }
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  h1, .text-berandaa{
+    font-weight: 600;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+  }
+  section {
+    padding: 0 10%;
+  }
+  
+  .home {
+    background-image: url(Asset/bg-beranda1.png);
+    background-size: cover;
+  }
+  .about-home {
+    background-size: cover;
+  }
+  
+  .news-home {
+    background-image: url(Asset/beranda/news/bg-news.png);
+    background-size: cover;
+  }
+  .information-home {
+    background-image: url(Asset/beranda/infoEdu/bg-infoEdu.png);
+    background-size: cover;
+  }
+  
+  .donation-home {
+    background-image: url(Asset/beranda/forumDonation/bg-forumDonation.png);
+    background-size: cover;
+  }
+  .cut-img {
+    height: 160px;
+    width: 286px;
+    object-fit: cover;
+  }
+  
+  .cut-img2 {
+    height: 87px;
+    width: 286px;
+    object-fit: cover;
+  }
+  
+  #btn-beranda {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    padding: 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+  }
+/* Navigasi Bar */
+.navbar{
+  background-color: #00487c;
+  font-size: 10px;
+}
+/* halaman news */
+.card .card-body .card-text{
+  font-size: xx-small;
+  text-align: left;
+}
+a, .card-text{
+  text-decoration: none;
+}
+/* Halaman Footer */
+.text-footer{
+  font-size: x-small;
+}
+
+.row{
+  display: flex; 
+  justify-content: center;
+}
+
+/* Halamana Informasi News - more news */
+.card{
+  width: 12rem;
+}
+
+.card-body{
+  font-size: 12px;
+}
+
+.btn{
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+
+.more-news{
+  background-image: url(Asset/news/bg-moreNews.png);
+  width: 100%;
+  height: 200%;
+  padding: 5%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.card-family{
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top{
+  height: 8rem;
+}
+
+.more-news{
+  background-image: url(Asset/informasiNews/news/bg-moreNews.png);
+  width: 100%;
+  height: 200%;
+  padding: 5%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.latest-news{
+  background-image: url(Asset/informasiNews/latest-news/bg-latestNews.png);
+  width: 100%;
+  height: 200%;
+  padding: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Halaman Konten Edukasi */
+.konten{
+  font-size: 20px;
+}
+
+#img-konten{
+  float: left;
+  margin-right: 15px;
+}
+
+.pembungkus-konten{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pemLeft{
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+iframe{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: auto;
+}
+
+/* Halaman Konten Event */
+.documentation{
+  background-image: url(Asset/informasiKontenEvents/documentation/bg-documentation.png);
+  width: 100%;
+  height: 200%;
+  padding: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.spasi2{
+  margin-top: 5%;
+}
+
+.spasi3{
+  margin-top: 22%;
+}
+
+.flex-rectangle{
+  background-color: #3398DB;
+  width: 8rem;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-Event{
+  background-color: #3398DB;
+  width: 20rem;
+  color: white;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Halaman Register */
+input[type=text],[type=number], [type=email]{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 70px;
+  padding: 10px 10px;
+  margin: 20px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px 2px rgb(186, 186, 186) inset;
+  font-size: 18px;
+}
+
+input[type=password]{
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 70px;
+  padding: 20px 20px;
+  margin: 20px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px 2px rgb(186, 186, 186) inset;
+}
+
+.button a .regis {
+  width: 100%;
+  max-width: 200;
+  background-color: #004B7C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.fo{
+  position: absolute;
+  width: 499px;
+  border-radius: 0px 20px 20px 0px;
+  padding: 20px;
+  right: 72px;
+  background-color: #ffffff;
+  height: 96%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 18px;
+}
+
+.button{
+  position: relative;
+  right: 20px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+form{
+  width: 100%;
+  font-family :'Poppins';
+  position: relative;
+  top: 5vh;
+  bottom: 5vh;
+  height: 120%;
+}
+
+.section-register{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  right: 15%; 
+}
+
+#red{
+  width: 29%;
+  padding: 20px;
+  height: 80%;
+  /* max-height: 075px; */
+  top: 18px;
+}
+
+.form-registrasi{
+  height: 32rem;
+}
+
+.btn-regis{
+  background-color: #00487c;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+}
+
+/* Halaman Pengisian Form Donasi */
+.form-donasi{
+  background-image: url(Asset/pengisianFormDonasi/bg-pengisianFormDonasi.png);
+  width: 100%;
+  height: 135vh;
+  overflow: hidden;
+  margin: auto;
+  position: center;
+}
+
+.form{
+  width: cover;
+  background-color: gray;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px 5%;
+  margin-left: 60px;
+  margin-top: 60px;
+  /* opacity: 0.5; */
+}
+
+.form-label{
+  color: white;
+}
+
+.btn-confir, .btn-confirmation{
+  background-color: #00487c;
+  width: cover;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
+}
+
+.btn-confirmation{
+  background-color: #3398DB;
+  padding: 10px 50px;
+}
+
+/* Halaman Pembayaran */
+.metode_pembayaran{
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  background-image: url(Asset/pembayaran/bg-pembayaran.png);
+  
+}
+
+.logo{
+  display: flex;
+  justify-content: space-around;
+  background-position: center;
+  flex-direction:column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.metode{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top:20px ;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height:auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.Dana {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  /* background-color: beige; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Dana p{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-top: 10px; 
+}
+
+.log {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  background-size: auto;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.log:hover{
+  border-color: #00487c;
+  background-color: rgb(182, 195, 231);
+  border-style: dashed;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.log:active{
+  background-color:rgb(233, 243, 251) ;
+  border: 2px solid blue;
+}
+
+.log img{
+  width: 100px;
+  height: auto;
+}
+
+.dempit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.title-pembayaran{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+
+.konfir-pembayaran{
+  background-image: url(Asset/konfirmasiPembayaran/bg-konfPem.png);
+  width: cover;
+  height: 100%;
+}
+
+.t-input {
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  background-color: white;
+  border-radius: 15px;
+  opacity: 100;
+}
+
+.t-input p:first-child{
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+textarea {
+  background-color: black !important;
+  color: white !important;
+  font-size: 15px !important;
+  resize: none;  
+}
+
+textarea:active{
+  color: white;
+}
