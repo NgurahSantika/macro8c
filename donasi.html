@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blue Action</title>
     <style>
-        .container{
-            width: 50%;
-        }
-        a, .btn{
-            position: relative;
-            display: flex;
-            justify-content: right;
-            border-radius: 10px;
-            margin: auto;
-        }
+    
+    .content button{
+      height: 45px;
+      width: 120px;
+      position: absolute;
+      bottom: 80px;
+      left: 80%;
+    }       
+    @media only screen and (max-width:1200px) {
+      .card {
+        color: red;
+      }
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .content button {
+      position: absolute;
+      bottom: 12%;
+      left: 224px;
+  }
+}
         .absolute{
             position: absolute;
             top: 60%;
@@ -24,16 +35,25 @@
             height: 100px;
             color: white;
         }
-        .btn{
-            position: absolute;
-            margin-top: 27%;
-            margin-right: 3%;
-            top: 90%;
-            color: white;
-        }
+
         .main-content{
             background-image: url(Asset/donasi/bg-donasi.png);
         }
+        .main-content img {
+          width:100%;
+          height:auto;
+        }
+
+        .content {
+          height: 400px;
+          background-image: url(Asset/donasi/beranda-donasi.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          border-radius: 15px;
+        }
+
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700" />
@@ -43,121 +63,118 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow">
-      <div class="container-fluid ms-5 me-5" id="nav">
-      <a class="navbar-brand" href="index.html">
-          <img src="Asset/BlueAction.png" alt="Logo" width="50px" class="d-inline-flex align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mt-2" id="navbarNav">
-        <ul class="navbar-nav ms-auto nav-fill">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html"> <p>Home</p></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="index.html#about-home"><p>About Us</p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html#news-home"> <p>News</p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="index.html#information-home"><p>Information</p></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " href="index.html#donation-home"><p>Donation</p></a>
-          </li>
-        </ul>
+        <div class="container-fluid ms-5 me-5">
+        <a class="navbar-brand" href="#">
+            <img src="Asset/BlueAction.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-fill">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"> <p>Home</p></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html"><p>About Us</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"> <p>News</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="index.html"><p>Information</p></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><p>Donation</p></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav> 
+    </nav> 
     <!-- Beranda -->
-    <div class="container" style="background-image: url(Asset/donasi/beranda-donasi.png); border-radius: 20px; height: 17rem;">
+    <div class="container" style="border-radius: 20px; ">
       <div class="content mt-5">
         <div class="absolute">
             <h4>Help Free Rivers from Plastic Pollution</h4>
             <p>Palu, Sulawesi Barat</p>
-            <h6 style="color: white;">Collected Rp.151.212.309</h6> 
+            <h6 class="text-white">Collected Rp.151.212.309</h6> 
         </div>
         <a href="register.html" style="right: auto;"><button type="button" class="btn btn-primary rounded" style="right: auto;">Donate</button></a>         
-      </div><br>
+      </div>
       <br>
-    </div><br><br>
+    </div>
+
+    <div class="flex-rectangle mt-2 mx-auto">
+      <p class="my-auto" align="center">Event Donasi</p>
+    </div>
     <!-- card -->
-    <div class="main-content"><br>
-            <div class="flex-rectangle mt-2 mx-auto">
-              <p class="my-auto" align="center">Event Donasi</p>
-            </div>
+    <div class="main-content  mt-5">
       <div class="container">
-        <div class="card-content mt-1">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5">
-              <div class="card mb-3" style="width: 20rem;">
-                <img src="Asset/donasi/donasi-image1.png" class="card-img-top" alt="..." style="width: 20rem;"/>
+        <div class="mt-5">
+          <div class="row mx-auto ">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ">
+              <div class="card mb-3 mt-5" style="width: auto;">
+                <img src="Asset/donasi/donasi-image1.png" class="card-img-top" alt="..."  />
                 <div class="card-body">
                     <p class="card-text"><b>Plant 1 Tree for the Future.</b><br>
-                    <span style="font-size: xx-small;">Makassar, Sulawesi Selatan</span><br>
+                    <span >Makassar, Sulawesi Selatan</span><br>
                     <b>Collected : Rp.151.212.309</b></p>
                 </div>
-              </div>
+              </div> 
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5">
-                <div class="card mb-3" style="width: 20rem;">
-                <img src="Asset/donasi/donasi-image2.png" class="card-img-top" alt="..." style="width: 20rem;"/>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="card mb-3 mt-5" style="width: auto;">
+                <img src="Asset/donasi/donasi-image2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <p class="card-text"><b>Free Indonesia from Plastic Waste</b><br>
-                    <span style="font-size: xx-small;">Biak Papua</span><br>
+                    <span >Biak Papua</span><br>
                     <b>Collected : Rp.70.233.091</b></p>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="card mb-3" style="width: 20rem;">
-                    <img src="Asset/donasi/donasi-image3.png" class="card-img-top" alt="..." style="width: 20rem;"/>
-                <div class="card-body" style="width: 20rem;">
-                  <p class="card-text"><b>Efforts to Recycle Waste into Usable Goods</b><br>
-                    <span style="font-size: xx-small;">Pinrang, Sulawesi Selatan</span><br>
-                    <b>Collected : Rp. 81.221.991</b></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="card mb-3" style="width: 20rem;">
-                    <img src="Asset/donasi/donasi-image4.png" class="card-img-top" alt="..." style="width: 20rem;"/>
-                <div class="card-body">
-                    <p class="card-text"><b>Zero Plastic Challenge: Care for the Earth, Reduce Plastic</b><br>
-                        <span style="font-size: xx-small;">Palu, Sulawesi Barat</span><br>
-                        <b>Collected : Rp.19.438.833</b></p>
-                </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+              <div class="card mb-3 mt-5 anying"style="width: auto;" >
+                  <img src="Asset/donasi/donasi-image3.png" class="card-img-top" alt="..." />
+              <div class="card-body" >
+                <p class="card-text "><b>Efforts to Recycle Waste into Usable Goods</b><br>
+                  <span >Pinrang, Sulawesi Selatan</span><br>
+                  <b>Collected : Rp. 81.221.991</b></p>
               </div>
             </div>
           </div>
 
-          <div class="row mt-4 mb-5">
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="card mb-3" style="width: 20rem;">
-                    <img src="Asset/donasi/donasi-image5.png" class="card-img-top" alt="..." style="width: 20rem;"/>
-                <div class="card-body">
-                    <p class="card-text"><b>Plastic Action: For a Better Environment</b><br>
-                        <span style="font-size: xx-small;">Salatiga, Jawa Tengah</span><br>
-                        <b>Collected : Rp. 81.221.991</b></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="card mb-3" style="width: 20rem;">
-                    <img src="Asset/donasi/donasi-image6.png" class="card-img-top" alt="..." style="width: 20rem;"/>
-                <div class="card-body">
-                    <p class="card-text"><b>No Plastic, No Limits: A Movement for Change</b><br>
-                        <span style="font-size: xx-small;">Jakarta</span><br>
-                        <b>Collected : Rp.19.438.833</b></p>
-                </div>
-              </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="card mb-3" style="width: auto;" >
+                <img src="Asset/donasi/donasi-image4.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+                <p class="card-text"><b>Zero Plastic Challenge: Care for the Earth, Reduce Plastic</b><br>
+                    <span >Palu, Sulawesi Barat</span><br>
+                    <b>Collected : Rp.19.438.833</b></p>
             </div>
           </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="card mb-3"style="width: auto;" >
+              <img src="Asset/donasi/donasi-image5.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+              <p class="card-text"><b>Plastic Action: For a Better Environment</b><br>
+                  <span >Salatiga, Jawa Tengah</span><br>
+                  <b>Collected : Rp. 81.221.991</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <div class="card mb-3" style="width: auto;">
+              <img src="Asset/donasi/donasi-image6.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+              <p class="card-text"><b>No Plastic, No Limits: A Movement for Change</b><br>
+                  <span ">Jakarta</span><br>
+                  <b>Collected : Rp.19.438.833</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
@@ -171,8 +188,8 @@
                   Blue Action 
                 </h4>
                 <p class="text-footer">
-                 Email : blueaction@gmail.com <br>
-                 Contact : +62275753957349
+                  Email : blueaction@gmail.com <br>
+                  Contact : +62275753957349
                 </p>
               </div> 
               <div class="col-12 col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 text-center mb-5">

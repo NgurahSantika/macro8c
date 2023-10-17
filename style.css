@@ -390,13 +390,27 @@ form{
 
 /* Halaman Pembayaran */
 .metode_pembayaran{
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: auto;
   background-image: url(Asset/pembayaran/bg-pembayaran.png);
+  background-position: center;
+  background-size: cover;
   
+}
+.con-donate{
+  display: flex;
+  flex-direction: column;
+  background-image: url(Asset/donasi/beranda-donasi.png); 
+  background-size: cover;
+  border-radius: 20px; 
+  height: 17rem;
+  justify-content: flex-end;
+  color: #ffffff;
+  padding: 30px;
+  margin: 30px 10%;
 }
 
 .logo{
@@ -409,13 +423,11 @@ form{
   align-items: center;
   width: 100%;
   height: cover;
-  border-radius: 20px 20px 0px 0px;
 }
 
 .metode{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   padding-top:20px ;
   background-position: center;
   background-size: cover;
@@ -479,9 +491,14 @@ form{
 }
 
 .title-pembayaran{
+  width: 100%;
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 5%;
+  padding: 5% 0 5% 7%;
+}
+
+.title-pembayaran h2{
+  font-weight: bolder;
 }
 
 .konfir-pembayaran{
