@@ -1,26 +1,56 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1056px) {
     body {
       width: 100%;
     }
+
+    h3 {
+      font-size: 45px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+    }
   }
+@media screen and (max-width: 1056px) {
+    body {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h1{
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
   
   body {
     font-family: poppins;
   }
-  p {
+nav #nav ul li a {
+  /* font navbar kekecilan  */
+  font-size: 20px;
+}
+
+  /* p {
     font-size: 20px;
-  }
-  h3 {
+  } */
+  /* h3 {
     font-size: 45px;
     font-weight: bold;
-  }
-  h1, .text-berandaa{
+  } */
+  /* h1, .text-berandaa{
     font-weight: 600;
-  }
-  h1 {
+  } */
+  /* h1 {
     font-weight: bold;
-    font-size: 60px;
-  }
+    font-size: 50px;
+  } */
   section {
     padding: 0 10%;
   }
@@ -46,15 +76,14 @@
     background-image: url(Asset/beranda/forumDonation/bg-forumDonation.png);
     background-size: cover;
   }
-  .cut-img {
-    height: 160px;
-    width: 286px;
+  /* gambar yang bermasalah */
+  .cut-img { 
+    width: 100%;
     object-fit: cover;
   }
   
   .cut-img2 {
-    height: 87px;
-    width: 286px;
+    width: 100%;
     object-fit: cover;
   }
   
@@ -73,7 +102,6 @@
 /* Navigasi Bar */
 .navbar{
   background-color: #00487c;
-  font-size: 10px;
 }
 /* halaman news */
 .card .card-body .card-text{
@@ -85,7 +113,7 @@ a, .card-text{
 }
 /* Halaman Footer */
 .text-footer{
-  font-size: x-small;
+  font-size: medium;
 }
 
 .row{
@@ -204,6 +232,15 @@ iframe{
   padding: 10px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.flex-rectangle1{
+  background-color: #3398DB;
+  width: 12rem;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .flex-Event{
   background-color: #3398DB;
@@ -218,7 +255,7 @@ iframe{
 }
 
 /* Halaman Register */
-input[type=text],[type=number], [type=email]{
+input[type=text],[type=number],[type=email],[type=password]{
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -231,36 +268,7 @@ input[type=text],[type=number], [type=email]{
   box-sizing: border-box;
   box-shadow: 0px 3px 6px 2px rgb(186, 186, 186) inset;
   font-size: 18px;
-}
-
-input[type=password]{
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
-  max-height: 70px;
-  padding: 20px 20px;
-  margin: 20px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  box-sizing: border-box;
-  box-shadow: 0px 3px 6px 2px rgb(186, 186, 186) inset;
-}
-
-.button a .regis {
-  width: 100%;
-  max-width: 200;
-  background-color: #004B7C;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-
+  resize: vertical;
 }
 
 .fo{
@@ -270,9 +278,10 @@ input[type=password]{
   padding: 20px;
   right: 72px;
   background-color: #ffffff;
-  height: 96%;
+  max-height: 100%;
+  height: 98.1vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  top: 18px;
+  top: 19px;
 }
 
 .button{
@@ -289,6 +298,7 @@ form{
   position: relative;
   top: 5vh;
   bottom: 5vh;
+  float: left;
   height: 120%;
 }
 
@@ -303,7 +313,8 @@ form{
 #red{
   width: 29%;
   padding: 20px;
-  height: 80%;
+  max-height: 100%;
+  height: 103vh;
   /* max-height: 075px; */
   top: 18px;
 }
@@ -325,6 +336,10 @@ form{
   font-size: 16px;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 6px 20px 4px rgba(0, 0, 0, 0.19);
 }
+.btn-regis:hover{
+  background-color: #3398DB;
+}
+
 
 /* Halaman Pengisian Form Donasi */
 .form-donasi{

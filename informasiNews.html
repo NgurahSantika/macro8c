@@ -19,9 +19,9 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow">
-        <div class="container-fluid ms-5 me-5">
-        <a class="navbar-brand" href="#">
-            <img src="Asset/BlueAction.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+        <div class="container-fluid ms-5 me-5" id="nav">
+        <a class="navbar-brand" href="index.html">
+            <img src="Asset/BlueAction.png" alt="Logo" width="50px" class="d-inline-flex align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,19 @@
         <div class="collapse navbar-collapse mt-2" id="navbarNav">
           <ul class="navbar-nav ms-auto nav-fill">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"> <p>Home</p></a>
+              <a class="nav-link" aria-current="page" href="index.html"> <p>Home</p></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="index.html"><p>About Us</p></a>
+                <a class="nav-link" href="index.html#about-home"><p>About Us</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"> <p>News</p></a>
+              <a class="nav-link active" aria-current="page" href="index.html#news-home"> <p>News</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html"><p>Information</p></a>
+              <a class="nav-link " href="index.html#information-home"><p>Information</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html"><p>Donation</p></a>
+              <a class="nav-link " href="index.html#donation-home"><p>Donation</p></a>
             </li>
           </ul>
         </div>
@@ -80,8 +80,9 @@
                 <div class="flex-rectangle mt-2 mx-auto">
                   <p class="my-auto" align="center">News</p>
                 </div><br>
+                <!-- <h1> News </h1> -->
                 <!-- Card 1 -->
-                    <div class="card-family">
+                    <div class="card-family" id="card1">
                         <div class="card mx-auto">
                             <a href="https://tekno.tempo.co/read/1768154/gubernur-khofifah-indar-parawansa-perangi-sampah-plastik-sebut-kebakaran-gunung-arjuno-ulah-manusia">
                             <img src="Asset/informasiNews/news/slides1/image-news1.png" class="card-img-top" alt="...">
@@ -113,7 +114,7 @@
                         <p class="card-text">Reduce Waste, BRIN Researches Recyclable Coated Plastics</p>
                         </div></a>
                     </div>
-                    <div class="card mx-auto">
+                    <div class="card mx-auto" >
                         <a href="https://travel.tempo.co/read/1755337/bandara-di-amerika-serikat-ini-larang-penjualan-minuman-dalam-botol-plastik">
                         <img src="Asset/informasiNews/news/slides1/image-news5.png" class="card-img-top" alt="...">
                         <div class="card-body  ">

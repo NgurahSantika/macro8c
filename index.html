@@ -12,8 +12,8 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow">
-        <div class="container-fluid ms-5 me-5">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow nav">
+        <div class="container-fluid ms-5 me-5" id="nav">
         <a class="navbar-brand" href="#">
             <img src="Asset/BlueAction.png" alt="Logo" width="50" class="d-inline-block align-text-top">
         </a>
@@ -26,18 +26,19 @@
               <a class="nav-link active" aria-current="page" href="#"> <p>Home</p></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#about-home"><p>About Us</p></a>
+                <a class="nav-link " href="#about-home"><p>About Us</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#news-home"> <p>News</p></a>
+              <a class="nav-link" aria-current="page" href="#news-home"> <p>News</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#information-home"><p>Information</p></a>
+              <a class="nav-link " href="#information-home"><p>Information</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#donation-home"><p>Donation</p></a>
+              <a class="nav-link " href="#donation-home"><p>Donation</p></a>
             </li>
           </ul>
+          
         </div>
       </div>
     </nav>    
@@ -63,15 +64,17 @@
     <section class="about-home mt-5 mb-5" id="about-home">
     <div class="container-fluid">
       <div class="row">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 " >
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 p-5" >
           <img src="Asset/beranda/aboutSite/image1.png"
-              alt="" width="100%" />
+              alt="" width="100%"  />
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-5 text-end" >
-            <h1 style="color: #004B7C;">ABOUT SITE</h1>
-            <p style="color: #004B7C;">
-                Blue Action is a company that provides information regarding the impact of plastic waste on the environment. Providing areas with the most plastic waste and providing Trash Pick Up services to reduce plastic waste and recycle it into more useful items for the community.
-            </p>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-5 text-end " style="display: flex; justify-content: center;align-items: center;flex-direction: column;">
+              <div>
+                <h1 style="color: #004B7C;">ABOUT SITE</h1>
+                <p style="color: #004B7C;">
+                    Blue Action is a company that provides information regarding the impact of plastic waste on the environment. Providing areas with the most plastic waste and providing Trash Pick Up services to reduce plastic waste and recycle it into more useful items for the community.
+                </p>
+              </div>
           </div>
         </div>
       </div>
@@ -230,7 +233,7 @@
             <a href="informasiKontenEvent.html" class="btn mt-3" style="color: rgb(0, 0, 0);background-color: white;">visit</a>
           </div>
           <!-- documentation  -->
-          <div class="col-sm-6 pb-5 text-end" style="color: white">
+          <div class="col-sm-6 pb-5 text-end " style="color: white">
             <h3>DOCUMENTATION</h3>
             <p>
               The documentation on plastic waste can focus on gathering data
@@ -238,7 +241,7 @@
               and the efforts made in its management.
             </p><br>
             <div class="row">
-              <div class="col-12 col-sm-4 col-md-4 col-xl-4">
+              <div class="col-4 col-sm-4 col-md-4 col-xl-4">
                 <div class="col-12 col-xl-12 pb-1">
                   <img src="Asset/beranda/documentation/image-documentation1.png" alt="..." class="rounded-2" width="80%" />
                 </div>
@@ -246,7 +249,7 @@
                   <img src="Asset/beranda/documentation/image-documentation2.png" alt="..." class="rounded-2" width="80%" />
                 </div>
               </div>
-              <div class="col-12 col-sm-8 col-md-8 ol-xl-8">
+              <div class="col-8 col-sm-8 col-md-8 ol-xl-8">
                 <img src="Asset/beranda/documentation/image-documentation3.png" alt="" class="rounded-2" width="100%" />
               </div>
             </div>
@@ -266,7 +269,7 @@
       </div>
      </section>
   <!-- Footer -->
-  <footer
+  <footer id="foot"
           class="text-center  text-white"
           style="background-color: #004B7C"
           >
