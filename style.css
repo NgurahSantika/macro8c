@@ -344,8 +344,9 @@ form{
 /* Halaman Pengisian Form Donasi */
 .form-donasi{
   background-image: url(Asset/pengisianFormDonasi/bg-pengisianFormDonasi.png);
+  background-size: cover;
   width: 100%;
-  height: 135vh;
+  height: fit-content;
   overflow: hidden;
   margin: auto;
   position: center;
