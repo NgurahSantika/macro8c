@@ -84,8 +84,10 @@ nav #nav ul li a {
   
   .cut-img2 {
     width: 100%;
+    height: 80%;
     object-fit: cover;
   }
+
   
   #btn-beranda {
     background-color: white;
