@@ -125,11 +125,14 @@ a, .card-text{
 
 /* Halamana Informasi News - more news */
 .card{
-  width: 12rem;
+  width: 18rem;
 }
 
 .card-body{
   font-size: 12px;
+  width: 18rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .btn{
@@ -301,7 +304,6 @@ form{
   top: 5vh;
   bottom: 5vh;
   float: left;
-  height: 120%;
 }
 
 .section-register{

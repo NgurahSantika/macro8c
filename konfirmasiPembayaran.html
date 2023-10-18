@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blue Action</title>
     <style>
+        /* .absolute{
+            position: absolute;
+            top: 60%;
+            left: auto;
+            margin-left: 3%;
+            height: 100px;
+            color: white;
+        } */
+        .main-content1 {    
+            background-image: url(Asset/konfirmasiPembayaran/bg-konfPem.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            /* padding-top: 20px;
+            padding-bottom: 20px; */
+        }
+        .main-content{
+            background-image: url(Asset/donasi/bg-donasi.png);
+        }
         .absolute{
             position: absolute;
             top: 60%;
@@ -14,24 +33,33 @@
             height: 100px;
             color: white;
         }
-        .main-content {    
-            background-image: url(Asset/konfirmasiPembayaran/bg-konfPem.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding-top: 20px;
-            padding-bottom: 20px;
+        .content {
+          height: 400px;
+          background-image: url(Asset/donasi/beranda-donasi.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          border-radius: 15px;
         }
 
         .box {
             background-color: rgba(30, 30, 30, 0.816);
-            opacity: 80%;
+            opacity: 0.8;
             border-radius: 15px ;
+        }
+
+        .form-control{
+          opacity: 1.0 !important;
         }
 
         .main-box{
             margin-left:  60px;
             margin-right: 60px;
-            height: 750px;
+            height: 650px;
+        }
+
+        .btn-confirmation{
+          opacity: 1.0 !important;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -71,30 +99,28 @@
   </div>
 </nav> 
     <!-- Halaman Beranda -->
-    <div class="container" style="background-image: url(Asset/donasi/beranda-donasi.png); border-radius: 20px; height: 17rem;">
-        <div class="content mt-5 my-5">
-          <div class="absolute">
-              <h4>Help Free Rivers from Plastic Pollution</h4>
-          </div>        
-        </div> <div class="spasi2"></div>
-      </div> <div class="spasi2"></div>
+    <div class="container" style="border-radius: 20px; ">
+      <div class="content mt-5">
+        <div class="absolute">
+            <h4>Help Free Rivers from Plastic Pollution</h4>
+            <p>Palu, Sulawesi Barat</p>
+            <h6 class="text-white">Collected Rp.151.212.309</h6> 
+        </div>   
+      </div>
+      <br>
+    </div>
       <!-- Konfirmasi Pembayaran -->
       <!-- <div class="konfir-pembayaran"> -->
 
-          <div class="main-content mt-5 mb-5">
-            <div class="container">
-              <div class="box mt-5 mb-5">
+          <div class="main-content1">
+            <div class="container p-5 pb-5"> 
+              <div class="box"> 
+                <br> <br> 
                 <div class="main-box pt-4 text-light">
-                  <div class="t-input p-3">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <p class="">Rp</p>
-                      </div>
-                      <div class="col-lg-6">
-                        <p class="float-end">15.000</p>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="mb-1">
+                    <label for="exampleFormControlInput1" class="form-label">Donation Amount</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="input your phone number" style="height: 300px; font-size: 40px;">
+                </div>
                   <div class="pem9">
                     <p class="mt-4">Payment Methods</p>
                     <p class="mt-0">Shopeepay</p>

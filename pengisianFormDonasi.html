@@ -6,15 +6,26 @@
     <title>Blue Action</title>
     <style>
         .absolute{
-            /* position: absolute;
+            position: absolute;
             top: 60%;
             left: auto;
             margin-left: 3%;
-            height: 100px; */
+            height: 100px;
             color: white;
         }
         .main-content{
             background-image: url(Asset/donasi/bg-donasi.png);
+        }
+        .content {
+          height: 400px;
+          background-image: url(Asset/donasi/beranda-donasi.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          border-radius: 15px;
+        }
+        .form{
+          height: 550px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -54,16 +65,16 @@
     </div>
   </nav> 
     <!-- Halaman Beranda -->
-    <div class="con-donate">
-      <h4>Help Free Rivers from Plastic Pollution</h4>
-      <p>Palu, Sulawesi Barat</p>
-      <h6 >Collected Rp.151.212.309</h6> 
-        <div class="content">
+      <div class="container" style="border-radius: 20px; ">
+        <div class="content mt-5">
           <div class="absolute">
-          </div>        
-        </div> 
-        <!-- <div class="spasi2"></div> -->
-      </div> 
+              <h4>Help Free Rivers from Plastic Pollution</h4>
+              <p>Palu, Sulawesi Barat</p>
+              <h6 class="text-white">Collected Rp.151.212.309</h6> 
+          </div>   
+        </div>
+        <br>
+      </div>
       <!-- <div class="spasi2"></div> -->
     <!-- Halaman FORM -->
     <div class="form-donasi">
@@ -82,15 +93,11 @@
                   <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="input your phone number">
               </div>
               <div class="mb-1">
-                  <label for="exampleFormControlInput1" class="form-label">Donation Amount</label>
-                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="input your donation amount">
-              </div>
-              <div class="mb-1">
                   <br><a href="pembayaran.html"><button class="btn-confir" type="button">Confirmation</button></a>
             </div>
-              <div class="spasi2"><br></div>
-              </form>
-          </div>     
+            </form>
+          </div>
+          <div class="spasi2"></div>   
       </div>
       <!-- Halaman Footer -->
     <footer class="text-center  text-white" style="background-color: #004B7C" >
